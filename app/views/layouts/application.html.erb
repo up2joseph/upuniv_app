@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>UpunivApp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,8 +12,7 @@
 
   <body>
     
-   
-   <nav>
+     <nav>
     <div class="nav-wrapper">
       <a href="#!" class="brand-logo">Logo</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -20,7 +20,7 @@
         <li><a href="sass.html">Sass</a></li>
         <li><a href="badges.html">Components</a></li>
         <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
+        
       </ul>
     </div>
   </nav>
@@ -29,12 +29,25 @@
     <li><a href="sass.html">Sass</a></li>
     <li><a href="badges.html">Components</a></li>
     <li><a href="collapsible.html">Javascript</a></li>
-    <li><a href="mobile.html">Mobile</a></li>
+    
   </ul>
-        
+         
+   
 
- 
+
         
     <%= yield %>
+
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+       <script>
+         document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems,{});
+  });
+       </script>
+
+        
+
+
   </body>
 </html>
