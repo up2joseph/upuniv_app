@@ -19,5 +19,4 @@ require("channels")
 // const imagePath = (name) => images(name, true)
 
 import '../stylesheets/application'
-import 'materialize-css/dist/js/materialize'
-import '@material/icon-button/dist/mdc.icon-button';
+import 'materialize-css/dist/js/materialize.js'
